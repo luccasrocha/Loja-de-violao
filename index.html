@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loja de Instrumentos | Violões</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="header__bar">
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <h1 class="header__title">Loja de instrumentos</h1>
+
+      <div class="header__actions">
+        <button class="cart-btn" id="cartBtn" aria-label="Carrinho">
+          🛒 <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="nav" id="mainNav">
+      <a href="#inicio" class="nav__link">Início</a>
+      <a href="#produtos" class="nav__link">Violões</a>
+      <a href="#sobre" class="nav__link">Sobre</a>
+      <a href="#contato" class="nav__link">Contato</a>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="inicio">
+    <div class="hero__content">
+      <p class="hero__eyebrow">Cordas, madeira e som que emociona</p>
+      <h2 class="hero__title">Encontre o violão perfeito para a sua música</h2>
+      <p class="hero__text">
+        Instrumentos selecionados, com qualidade sonora e acabamento premium.
+        Do primeiro acorde ao show grande.
+      </p>
+      <a href="#produtos" class="btn btn--primary">Ver violões</a>
+    </div>
+  </section>
+
+  <!-- ===== PRODUTOS ===== -->
+  <section class="products" id="produtos">
+    <div class="section-heading">
+      <h2>Nossos violões</h2>
+      <p>Modelos acústicos e eletroacústicos para todos os níveis</p>
+    </div>
+
+    <div class="filters" id="filters">
+      <button class="filter-btn is-active" data-filter="todos">Todos</button>
+      <button class="filter-btn" data-filter="aco">Cordas de aço</button>
+      <button class="filter-btn" data-filter="nylon">Cordas de nylon</button>
+      <button class="filter-btn" data-filter="eletro">Eletroacústico</button>
+    </div>
+
+    <div class="product-grid" id="productGrid">
+      <!-- os cards de produto são inseridos pelo script.js -->
+    </div>
+  </section>
+
+  <!-- ===== SOBRE ===== -->
+  <section class="about" id="sobre">
+    <div class="about__content">
+      <h2>Feito por quem entende de música</h2>
+      <p>
+        Há mais de 15 anos selecionando os melhores violões para músicos de todos os estilos.
+        Testamos cada instrumento antes de chegar até você, garantindo afinação, timbre e
+        conforto na hora de tocar.
+      </p>
+      <ul class="about__list">
+        <li>✔ Instrumentos revisados e afinados</li>
+        <li>✔ Garantia de 12 meses</li>
+        <li>✔ Frete para todo o Brasil</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== CONTATO ===== -->
+  <section class="contact" id="contato">
+    <div class="section-heading">
+      <h2>Fale com a gente</h2>
+      <p>Tire suas dúvidas antes de escolher seu próximo violão</p>
+    </div>
+    <form class="contact-form" id="contactForm">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <textarea name="mensagem" placeholder="Sua mensagem" rows="4" required></textarea>
+      <button type="submit" class="btn btn--primary">Enviar mensagem</button>
+    </form>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>Loja de instrumentos © 2026 — Todos os direitos reservados</p>
+  </footer>
+
+  <!-- ===== CARRINHO (modal simples) ===== -->
+  <div class="cart-modal" id="cartModal">
+    <div class="cart-modal__box">
+      <div class="cart-modal__head">
+        <h3>Seu carrinho</h3>
+        <button class="cart-modal__close" id="cartClose" aria-label="Fechar carrinho">✕</button>
+      </div>
+      <ul class="cart-modal__list" id="cartList"></ul>
+      <div class="cart-modal__total">
+        Total: <span id="cartTotal">R$ 0,00</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast de aviso -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
