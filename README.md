@@ -8,7 +8,7 @@ Landing page responsiva para uma loja fictícia de violões, com catálogo de pr
 
 ---
 
-## 📖 Sobre o projeto
+##  Sobre o projeto
 
 O site simula uma loja online especializada em violões, apresentando:
 
@@ -23,10 +23,10 @@ O site simula uma loja online especializada em violões, apresentando:
 
 ---
 
-## 🗂️ Estrutura de arquivos
+##  Estrutura de arquivos
 
 ```
-📦 loja-de-instrumentos
+ loja-de-instrumentos
 ├── index.html      # Estrutura HTML da página
 ├── style.css       # Estilização e responsividade
 ├── script.js       # Lógica de interação (produtos, carrinho, filtros etc.)
@@ -35,35 +35,35 @@ O site simula uma loja online especializada em violões, apresentando:
 
 ---
 
-## ✨ Funcionalidades
+##  Funcionalidades
 
-### 🛍️ Catálogo de produtos
+###  Catálogo de produtos
 Os produtos são armazenados em um array de objetos JavaScript (`produtos`) e renderizados dinamicamente no DOM, cada um contendo nome, descrição, preço, categoria, imagem e um selo (badge) opcional como "Mais vendido" ou "Novo".
 
-### 🔍 Sistema de filtros
+###  Sistema de filtros
 Permite filtrar os violões exibidos por categoria:
 - **Todos**
 - **Cordas de aço**
 - **Cordas de nylon**
 - **Eletroacústico**
 
-### 🛒 Carrinho de compras
+###  Carrinho de compras
 - Adição de produtos com um clique;
 - Contador de itens no ícone do carrinho;
 - Modal com lista de itens adicionados e valor total, formatado em **Real (BRL)** via `toLocaleString`.
 
-### 📱 Menu responsivo
+###  Menu responsivo
 Menu de navegação que se transforma em um botão hambúrguer em telas menores, com abertura/fechamento animado.
 
-### 🔔 Notificações (Toast)
+###  Notificações (Toast)
 Mensagens temporárias exibidas na tela ao adicionar produtos ao carrinho ou enviar o formulário de contato.
 
-### ✉️ Formulário de contato
+###  Formulário de contato
 Formulário simples com campos de nome, e-mail e mensagem, com validação HTML nativa (`required`) e feedback visual via toast ao ser enviado.
 
 ---
 
-## 🎨 Design
+##  Design
 
 O layout segue uma identidade visual em tons de **roxo**, com gradientes, sombras suaves e efeitos de destaque (glow), criando uma atmosfera moderna e elegante, adequada ao universo musical. As variáveis de cor, fonte e espaçamento são centralizadas em `:root` no arquivo `style.css`, facilitando futuras customizações.
 
@@ -74,28 +74,16 @@ O projeto é **totalmente responsivo**, com breakpoints para:
 
 ---
 
-## 🚀 Como executar o projeto
+##  Como executar o projeto
 
 Por ser um projeto estático (sem back-end ou dependências), basta:
 
 1. Baixar ou clonar os arquivos (`index.html`, `style.css`, `script.js`) mantendo-os na mesma pasta;
 2. Abrir o arquivo `index.html` diretamente no navegador;
 
-ou, alternativamente, rodar um servidor local simples, por exemplo:
-
-```bash
-# usando Python
-python3 -m http.server 8000
-
-# usando Node.js (http-server)
-npx http-server
-```
-
-E então acessar `http://localhost:8000` no navegador.
-
 ---
 
-## 🛠️ Tecnologias utilizadas
+##  Tecnologias utilizadas
 
 | Tecnologia | Uso |
 |---|---|
@@ -105,7 +93,7 @@ E então acessar `http://localhost:8000` no navegador.
 
 ---
 
-## 📌 Possíveis melhorias futuras
+##  Possíveis melhorias futuras
 
 - Persistência do carrinho com `localStorage`;
 - Integração com um back-end real para pagamentos e envio de formulário;
@@ -115,6 +103,6 @@ E então acessar `http://localhost:8000` no navegador.
 
 ---
 
-## ⚠️ Aviso
+##  Aviso
 
 Este projeto foi desenvolvido para fins de **atividade acadêmica/educacional**, com o objetivo de praticar conceitos de HTML, CSS e JavaScript. **Todo o conteúdo (código e este README) foi gerado com o auxílio de Inteligência Artificial.**
