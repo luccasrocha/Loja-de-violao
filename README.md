@@ -1,4 +1,4 @@
-# 🎸 Loja de Instrumentos | Violões
+#  Loja de Instrumentos | Violões
 
 Landing page responsiva para uma loja fictícia de violões, com catálogo de produtos, filtros por categoria, carrinho de compras interativo e formulário de contato. Desenvolvida com **HTML, CSS e JavaScript puros** (vanilla), sem frameworks ou bibliotecas externas.
 
